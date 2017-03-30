@@ -26,27 +26,87 @@ $(document).ready(function() {
 		}
 
 		if (scrollTop < aboutPosition.top) {
-			$("#about-tab").css({
+			$("#about-tab a").css({
 				"color": "white",
 			});
-			$("#portfolio-tab").css({
+			$("#portfolio-tab a").css({
 				"color": "white",
+			});
+			$("#about-tab a").hover( function() {
+				$(this).css({
+					"color": "#00cccc",
+				});
+			},
+			function() {
+				$(this).css({
+					"color": "white",
+				});
+			});
+			$("#portfolio-tab a").hover( function() {
+				$(this).css({
+					"color": "#00cccc",
+				});
+			},
+			function() {
+				$(this).css({
+					"color": "white",
+				});
 			});
 		}
 		if (scrollTop >= aboutPosition.top && scrollTop < portfolioPosition.top) {
-			$("#about-tab").css({
+			$("#about-tab a").css({
 				"color": "#00cccc",
 			});
-			$("#portfolio-tab").css({
+			$("#portfolio-tab a").css({
 				"color": "white",
+			});
+			$("#about-tab a").hover( function() {
+				$(this).css({
+					"color": "#00cccc",
+				});
+			},
+			function() {
+				$(this).css({
+					"color": "#00cccc",
+				});
+			});
+			$("#portfolio-tab a").hover( function() {
+				$(this).css({
+					"color": "#00cccc",
+				});
+			},
+			function() {
+				$(this).css({
+					"color": "white",
+				});
 			});
 		}
 		else if (scrollTop >= portfolioPosition.top) {
-			$("#about-tab").css({
+			$("#about-tab a").css({
 				"color": "white",
 			});
-			$("#portfolio-tab").css({
+			$("#portfolio-tab a").css({
 				"color": "#00cccc",
+			});
+			$("#about-tab a").hover( function() {
+				$(this).css({
+					"color": "#00cccc",
+				});
+			},
+			function() {
+				$(this).css({
+					"color": "white",
+				});
+			});
+			$("#portfolio-tab a").hover( function() {
+				$(this).css({
+					"color": "#00cccc",
+				});
+			},
+			function() {
+				$(this).css({
+					"color": "#00cccc",
+				});
 			});
 		}
 	}
