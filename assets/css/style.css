@@ -1,0 +1,418 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+@font-face {
+  font-family: 'Simplifica';
+  src: url("../fonts/simplifica/Simplifica.ttf");
+}
+@font-face {
+  font-family: 'Focus';
+  src: url("../fonts/focus/Focus-Regular.ttf");
+}
+@font-face {
+  font-family: "Starjhol";
+  src: url("../fonts/starjedi/Starjhol.ttf");
+}
+@font-face {
+  font-family: "Starjedi";
+  src: url("../fonts/starjedi/Starjedi.ttf");
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: "Simplifica";
+  margin-bottom: 241px;
+}
+
+.welcome {
+  position: relative;
+  height: 100vh;
+  margin-top: 0;
+  width: 100%;
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(#2d2d2d, #1c1c1c, #000000);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#2d2d2d, #1c1c1c, #000000);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#2d2d2d, #1c1c1c, #000000);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#2d2d2d, #1c1c1c, #000000);
+  /* Standard syntax (must be last) */
+  color: white;
+  text-align: center;
+}
+.welcome h1 {
+  position: relative;
+  top: 38vh;
+  font-size: 9vh;
+  line-height: 9vh;
+  margin-top: 0;
+}
+.welcome h2 {
+  position: relative;
+  top: 38vh;
+  font-size: 5vh;
+  line-height: 5vh;
+  margin-bottom: 0;
+}
+
+.navbar-1 {
+  background-color: rgba(34, 34, 34, 0);
+  border-color: rgba(8, 8, 8, 0);
+  background-image: none;
+}
+
+.navbar .brand-name {
+  font-size: 35px;
+  color: white;
+}
+.navbar .navbar-nav li {
+  font-size: 35px;
+  color: white;
+}
+.navbar .navbar-nav li a {
+  color: white;
+}
+.navbar .navbar-nav li a:link {
+  color: white;
+}
+.navbar .navbar-nav li a:hover {
+  color: #00cccc;
+}
+.navbar .navbar-nav #portfolio-tab-2 {
+  color: #00cccc;
+}
+
+.about-me-content {
+  height: 100vh;
+  margin-top: 0;
+  width: 100%;
+  color: #0298dd;
+  font-weight: 600;
+  background: black;
+}
+.about-me-content #about-me-background {
+  position: relative;
+  height: 100vh;
+  margin-top: 0;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  overflow: auto;
+  opacity: 0.5;
+}
+.about-me-content .container {
+  position: absolute;
+  top: 120vh;
+  width: 50%;
+  margin-left: 25%;
+}
+.about-me-content .container .my-picture {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-image: url("../images/profile2.jpg");
+  background-size: 100% 100%;
+  -webkit-filter: none;
+  /* Safari 6.0 - 9.0 */
+  filter: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 20px #302f2f;
+}
+.about-me-content .container h1 {
+  font-size: 50px;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 900;
+}
+.about-me-content .container p {
+  font-size: 40px;
+  text-align: center;
+}
+
+.portfolio-content {
+  background: #fff;
+  color: black;
+}
+.portfolio-content .container {
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.portfolio-content .container #portfolio-see-more {
+  display: block;
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.portfolio-content .container #portfolio-see-more a {
+  width: 100px;
+}
+.portfolio-content .container h1 {
+  font-size: 50px;
+  margin-top: 30px;
+  text-align: center;
+}
+.portfolio-content .container .row {
+  border-top: 1px solid #ddd;
+  padding-top: 2rem;
+}
+.portfolio-content .container .row .project-img {
+  height: auto;
+}
+.portfolio-content .container .row .project-img h2 {
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+.portfolio-content .container .row #project1-img h2 {
+  font-family: "Starjhol";
+  font-size: 65px;
+  line-height: 30px;
+  color: #e5b13a;
+}
+.portfolio-content .container .row #project1-img h3 {
+  font-family: "Starjedi";
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+.portfolio-content .container .row #project2-img img {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-content .container .row #project3-img h2 {
+  font-family: "Focus";
+  font-size: 50px;
+}
+.portfolio-content .container .row #project4-img img {
+  display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-content .container .row #project5-img img {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-content .container .row .panel {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+  border: 0 solid transparent;
+}
+.portfolio-content .container .row .project-desc {
+  height: 240px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.portfolio-content .container .row .project-desc p {
+  color: black;
+  font-size: 25px;
+  text-align: left;
+}
+.portfolio-content .container .row .project-desc button, .portfolio-content .container .row .project-desc iframe {
+  float: left;
+  margin-top: 20px;
+}
+.portfolio-content .container .row .project-desc button {
+  font-size: 20px;
+  border-radius: 20px;
+  width: 80px;
+}
+.portfolio-content .container .row .project-desc iframe {
+  padding-top: 6px;
+  margin-left: 10px;
+}
+
+.portfolio-content-full {
+  margin-top: 35px;
+}
+
+/*! Footer */
+footer {
+  background: #222222;
+  color: #fff;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 241px;
+}
+footer h3 {
+  color: #9d9d9d;
+  font-weight: lighter;
+  font-style: italic;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+footer p, footer li {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 10px 0;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color .5s, background .5s;
+  transition: color .5s, background .5s;
+}
+footer a:hover {
+  color: #65c2ed;
+}
+footer .centered {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .centered:before, footer .centered:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+footer .centered .footer-contact {
+  width: 35%;
+}
+footer .centered .footer-contact .fa {
+  width: 20px;
+  padding-right: 10px;
+}
+footer .centered .footer-connect {
+  width: 35%;
+}
+footer .centered .footer-navigation {
+  width: 30%;
+}
+footer .centered .footer-navigation ul {
+  width: 50%;
+  float: left;
+}
+footer .centered .footer-navigation .fa {
+  padding-right: 10px;
+}
+footer .bottom-bar {
+  position: relative;
+  text-align: center;
+  font-size: .8em;
+  text-transform: uppercase;
+  background: #000;
+  padding: 15px 0;
+}
+footer ul {
+  list-style-type: none;
+}
+
+.social li {
+  float: left;
+}
+.social a {
+  display: inline-block;
+  padding: 0 7px;
+  margin: 3px 10px 10px 0;
+  vertical-align: middle;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*! Footer */
+@media only screen and (max-width: 749px) {
+  body {
+    margin-bottom: 397px;
+  }
+
+  footer {
+    height: 397px;
+  }
+  footer .centered {
+    flex-wrap: wrap;
+  }
+  footer .centered .footer-contact {
+    width: 50%;
+    margin: 0 auto;
+  }
+  footer .centered .footer-connect {
+    width: 50%;
+    margin: 0 auto;
+  }
+  footer .centered .footer-navigation {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .about-me-content .container {
+    top: 100vh;
+    width: 100%;
+    margin-left: 0;
+  }
+  .about-me-content .container .my-picture {
+    width: 100px;
+    height: 100px;
+  }
+  .about-me-content .container h1 {
+    font-size: 30px;
+  }
+  .about-me-content .container p {
+    font-size: 20px;
+  }
+
+  .portfolio-content .container .row #project2-img img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    margin-bottom: 505px !important;
+  }
+
+  .navbar-1 {
+    background-color: #222;
+    border-color: #080808;
+    background-image: linear-gradient(to bottom, #3c3c3c 0, #222 100%);
+  }
+
+  .about-me-content .container {
+    top: 115vh;
+  }
+
+  .portfolio-content .container .row #project2-img img {
+    width: 65%;
+  }
+
+  footer {
+    height: 505px;
+  }
+  footer .centered {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  footer .centered .footer-contact {
+    width: 100%;
+    margin: 0 auto;
+  }
+  footer .centered .footer-connect {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
