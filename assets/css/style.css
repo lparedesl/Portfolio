@@ -217,6 +217,9 @@ body {
   background-color: transparent;
   border-color: transparent;
 }
+.portfolio-content .container .row .project-desc a:hover {
+  text-decoration: none;
+}
 .portfolio-content .container .row .project-desc p {
   color: black;
   font-size: 25px;

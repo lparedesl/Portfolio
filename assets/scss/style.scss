@@ -265,6 +265,10 @@ body {
 				background-color: transparent;
 				border-color: transparent;
 
+				a:hover {
+					text-decoration: none;
+				}
+
 				p {
 					color: black;
 					font-size: 25px;
