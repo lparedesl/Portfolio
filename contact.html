@@ -1,64 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Luis Paredes | Full Stack Web Developer</title>
 	<link rel="icon" href="assets/images/code brackets.jpg">
+
+	<!-- Reset CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Latest compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional Bootstrap theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- JavaScript -->
+	<script src="https://use.fontawesome.com/d1c076a58a.js"></script>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+	   (function(){
+	      emailjs.init("user_s4VkCgixaoqoqf5OVyu51");
+	   })();
+	</script>
 	<script type="text/javascript" src="assets/javascript/javascript.js"></script>
 </head>
-<body onload="javascript:window_onload();">
-	<!-- <a id="contact_section"> -->
-		<div id="navbar2" class="navbar2_absolute">
-			<div id="wrapper">
-				<div class="tab">
-					<a href="index.html#about_section">About</a>
-				</div>
-				<span class="divider"></span>
-				<div class="tab">
-					<a href="portfolio.html">Portfolio</a>
-				</div>
-				<span class="divider"></span>
-				<div class="tab">
-					<a href="#">Contact</a>
-				</div>
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand brand-name" href="index.html">Luis Paredes</a>
+			</div>
+			<!-- Tabs -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a id="about-tab-3" href="index.html#about_section">About</a></li>
+					<li><a id="portfolio-tab-3" href="portfolio.html">Portfolio</a></li>
+					<li><a id="contact-tab-3" href="">Contact</a></li>
+				</ul>
 			</div>
 		</div>
-	<!-- </a> -->
+	</nav>
 
-	<div id="content" class="content_2">
-		<div id="wrapper">
-			<h2 class="portfolio_title">Contact</h2>
-			<form action="mailto:lparedesl@gmail.com" method="post">
-				<h3>Name</h3>
-				<input class="inputbox" type="text" name="Name" placeholder="John Smith" />
-				<h3>E-mail</h3>
-				<input class="inputbox" type="text" name="Email" placeholder="example@email.com" />
-				<h3>Message</h3>
-				<textarea class="textareabox" name="Message"></textarea>
-				<br>
-				<input class="submitbutton" type="submit" value="Send Message" />
+	<!-- Contact -->
+	<div class="content contact-content">
+		<div class="container">
+		<div class="alert alert-success" id="message-alert">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Your message was sent succesfully.</strong>
+		</div>
+			<form role="form">
+				<legend>Contact</legend>
+				<div class="form-group">
+					<label for="">Name</label>
+					<input type="text" class="form-control" id="name-input" placeholder="Johm Smith">
+					<label for="">E-mail</label>
+					<input type="text" class="form-control" id="email-input" placeholder="example@email.com">
+					<label for="">Message</label>
+					<textarea class="form-control" rows="3" id="message-input" placeholder="Type your message"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary" id="send-email">Send</button>
 			</form>
 		</div>
 	</div>
 
-	<!-- <div class="connect">
-		<div id="wrapper">
-			<h2>Connect with Me</h2>
-			<div class="icon">
-				<a href="https://www.linkedin.com/in/luis-paredes-23aab657/" target="_blank"><img id="linkedin"></a>
-				<a href="https://www.facebook.com/lparedesl" target="_blank"><img id="facebook"></a>
-				<a href="https://twitter.com/lparedeso?lang=en" target="_blank"><img id="twitter"></a>
-				<a href="https://plus.google.com/+LuisParedes" target="_blank"><img id="gplus"></a>
-				<a href="http://stackoverflow.com/users/2898395/luis-paredes" target="_blank"><img id="stackoverflow"></a>
-				<span class="stretch"></span>
+	<!-- footer -->
+	<footer class="footer" role="contentinfo">
+		<section style="position:relative;">
+			<div class="centered">
+				<div class="col-md-4 footer-contact">
+					<h3>Contact</h3>
+					<ul>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="contact.html">lparedesl@gmail.com</a></li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:980-428-6491">(980) 428-6491</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-connect">
+					<h3>Connect</h3>
+					<ul class="social">
+						<li><a href="https://www.linkedin.com/in/luis-paredes-23aab657/" class="linkedin" target="_blank">
+							<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+						</a></li>
+						<li><a href="https://github.com/lparedesl" class="github" target="_blank">
+							<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+						</a></li>
+						<li><a href="https://www.facebook.com/" class="facebook" target="_blank">
+							<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+						</a></li>
+						<li><a href="https://twitter.com/" class="twitter" target="_blank">
+							<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+						</a></li>
+						<li><a href="https://plus.google.com/" class="googleplus" target="_blank">
+							<i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+						</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-navigation">
+					<h3>Navigate</h3>
+					<ul>
+						<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="index.html#about_section">About</a></li>
+						<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="portfolio.html">Portfolio</a></li>
+						<li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="">Contact</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</div> -->
-
-	<div class="footer">
-		&copy; Copyright 2017 | Luis Paredes
-	</div>
+		</section>
+		<section class="bottom-bar">
+			<p>© 2017 | Luis Paredes</p>
+		</section>
+	</footer>
 </body>
 </html>

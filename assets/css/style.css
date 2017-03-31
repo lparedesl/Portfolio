@@ -80,7 +80,7 @@ body {
 .navbar .navbar-nav li a:hover {
   color: #00cccc;
 }
-.navbar .navbar-nav #portfolio-tab-2 {
+.navbar .navbar-nav #portfolio-tab-2, .navbar .navbar-nav #contact-tab-3 {
   color: #00cccc;
 }
 
@@ -242,6 +242,44 @@ body {
   margin-top: 35px;
 }
 
+.contact-content {
+  margin-top: 70px;
+}
+.contact-content .container {
+  width: 30%;
+}
+.contact-content .container #message-alert {
+  display: none;
+  font-size: 24px;
+  text-align: center;
+}
+.contact-content .container #message-alert button {
+  font-size: 30px;
+}
+.contact-content .container form {
+  margin-top: 20px;
+}
+.contact-content .container form legend {
+  font-size: 40px;
+  text-align: center;
+}
+.contact-content .container form label, .contact-content .container form input, .contact-content .container form textarea {
+  font-size: 24px;
+}
+.contact-content .container form input, .contact-content .container form textarea, .contact-content .container form button {
+  margin-bottom: 20px;
+}
+.contact-content .container form textarea {
+  max-width: 100%;
+}
+.contact-content .container form button {
+  font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+}
+
 /*! Footer */
 footer {
   background: #222222;
@@ -381,6 +419,10 @@ footer ul {
 
   .portfolio-content .container .row #project2-img img {
     width: 50%;
+  }
+
+  .contact-content .container {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 500px) {

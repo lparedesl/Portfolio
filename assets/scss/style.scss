@@ -102,7 +102,7 @@ body {
     		}
     	}
 
-    	#portfolio-tab-2 {
+    	#portfolio-tab-2, #contact-tab-3 {
     		color: #00cccc;
     	}
     }
@@ -298,6 +298,52 @@ body {
 	margin-top: 35px;
 }
 
+.contact-content {
+	margin-top: 70px;
+
+	.container {
+		width: 30%;
+
+		#message-alert {
+			display: none;
+			font-size: 24px;
+			text-align: center;
+
+			button {
+				font-size: 30px;
+			}
+		}
+
+		form {
+			margin-top: 20px;
+
+			legend {
+				font-size: 40px;
+				text-align: center;
+			}
+
+			label, input, textarea {
+				font-size: 24px;
+			}
+			input, textarea, button {
+				margin-bottom: 20px;
+			}
+
+			textarea {
+				max-width: 100%;
+			}
+
+			button {
+				font-size: 20px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 120px;
+			}
+		}
+	}
+}
+
 /*! Footer */
 footer {
 	background     : $gray-darker;
@@ -482,6 +528,12 @@ footer {
 					}
 				}
 			}
+		}
+	}
+
+	.contact-content {
+		.container {
+			width: 100%;
 		}
 	}
 }
