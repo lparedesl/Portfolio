@@ -1,10 +1,9 @@
-@import "https://fonts.googleapis.com/css?family=Open+Sans";
 @font-face {
-  font-family: 'Simplifica';
-  src: url("../fonts/simplifica/Simplifica.ttf");
+  font-family: "Simplifica";
+  src: url("../fonts/simplifica/SIMPLIFICA Typeface.ttf");
 }
 @font-face {
-  font-family: 'Focus';
+  font-family: "Focus";
   src: url("../fonts/focus/Focus-Regular.ttf");
 }
 @font-face {
