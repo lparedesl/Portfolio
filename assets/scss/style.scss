@@ -203,7 +203,23 @@ body {
 				}
 			}
 
+			#project0-img {
+				img {
+					display: block;
+					width: 100px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
 			#project1-img {
+				h2 {
+					font-family: "Focus";
+					font-size: 50px;
+				}
+			}
+
+			#project2-img {
 				h2 {
 					font-family: "Starjhol";
 					font-size: 65px;
@@ -219,7 +235,7 @@ body {
 				}
 			}
 
-			#project2-img {
+			#project3-img {
 				img {
 					display: block;
 					width: 75%;
@@ -228,17 +244,10 @@ body {
 				}
 			}
 
-			#project3-img {
-				h2 {
-					font-family: "Focus";
-					font-size: 50px;
-				}
-			}
-
 			#project4-img {
 				img {
 					display: block;
-					width: 100px;
+					width: 75%;
 					margin-left: auto;
 					margin-right: auto;
 				}
@@ -247,7 +256,7 @@ body {
 			#project5-img {
 				img {
 					display: block;
-					width: 75%;
+					width: 40%;
 					margin-left: auto;
 					margin-right: auto;
 				}

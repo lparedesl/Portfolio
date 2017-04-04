@@ -172,37 +172,43 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.portfolio-content .container .row #project1-img h2 {
-  font-family: "Starjhol";
-  font-size: 65px;
-  line-height: 30px;
-  color: #e5b13a;
-}
-.portfolio-content .container .row #project1-img h3 {
-  font-family: "Starjedi";
-  font-size: 20px;
-  text-align: center;
-  color: black;
-}
-.portfolio-content .container .row #project2-img img {
-  display: block;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.portfolio-content .container .row #project3-img h2 {
-  font-family: "Focus";
-  font-size: 50px;
-}
-.portfolio-content .container .row #project4-img img {
+.portfolio-content .container .row #project0-img img {
   display: block;
   width: 100px;
   margin-left: auto;
   margin-right: auto;
 }
-.portfolio-content .container .row #project5-img img {
+.portfolio-content .container .row #project1-img h2 {
+  font-family: "Focus";
+  font-size: 50px;
+}
+.portfolio-content .container .row #project2-img h2 {
+  font-family: "Starjhol";
+  font-size: 65px;
+  line-height: 30px;
+  color: #e5b13a;
+}
+.portfolio-content .container .row #project2-img h3 {
+  font-family: "Starjedi";
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+.portfolio-content .container .row #project3-img img {
   display: block;
   width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-content .container .row #project4-img img {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-content .container .row #project5-img img {
+  display: block;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
