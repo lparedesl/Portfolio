@@ -44,14 +44,16 @@ body {
 }
 .welcome h1 {
   position: relative;
-  top: 38vh;
+  top: 33vh;
   font-size: 9vh;
   line-height: 9vh;
+  padding-bottom: 5vh;
   margin-top: 0;
+  color: #65c2ed;
 }
 .welcome h2 {
   position: relative;
-  top: 38vh;
+  top: 33vh;
   font-size: 5vh;
   line-height: 5vh;
   margin-bottom: 0;
@@ -172,7 +174,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.portfolio-content .container .row #project0-img img {
+.portfolio-content .container .row #project0-img svg {
   display: block;
   width: 100px;
   margin-left: auto;
@@ -194,7 +196,7 @@ body {
   text-align: center;
   color: black;
 }
-.portfolio-content .container .row #project3-img img {
+.portfolio-content .container .row #project3-img svg {
   display: block;
   width: 75%;
   margin-left: auto;
@@ -206,9 +208,27 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.portfolio-content .container .row #project5-img img {
+.portfolio-content .container .row #project5-img svg {
   display: block;
   width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-content .container .row #project8-img svg {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-content .container .row #project16-img svg {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-content .container .row #project18-img svg {
+  display: block;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -217,7 +237,6 @@ body {
   border: 0 solid transparent;
 }
 .portfolio-content .container .row .project-desc {
-  height: 240px;
   margin-bottom: 30px;
   background-color: transparent;
   border-color: transparent;
@@ -229,6 +248,10 @@ body {
   color: black;
   font-size: 25px;
   text-align: left;
+}
+.portfolio-content .container .row .project-desc ul li {
+  font-size: 25px;
+  color: #000;
 }
 .portfolio-content .container .row .project-desc button, .portfolio-content .container .row .project-desc iframe {
   float: left;
@@ -242,6 +265,9 @@ body {
 .portfolio-content .container .row .project-desc iframe {
   padding-top: 6px;
   margin-left: 10px;
+}
+.portfolio-content .container .row #project16-desc .row {
+  border-top: 0;
 }
 
 .portfolio-content-full {

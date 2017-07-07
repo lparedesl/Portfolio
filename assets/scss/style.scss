@@ -57,15 +57,17 @@ body {
 
     h1 {
     	position: relative;
-    	top: 38vh;
+    	top: 33vh;
     	font-size: 9vh;
     	line-height: 9vh;
+    	padding-bottom: 5vh;
     	margin-top: 0;
+		color: $footer-link-hover;
     }
 
     h2 {
     	position: relative;
-    	top: 38vh;
+    	top: 33vh;
     	font-size: 5vh;
     	line-height: 5vh;
     	margin-bottom: 0;
@@ -204,7 +206,7 @@ body {
 			}
 
 			#project0-img {
-				img {
+				svg {
 					display: block;
 					width: 100px;
 					margin-left: auto;
@@ -236,7 +238,7 @@ body {
 			}
 
 			#project3-img {
-				img {
+				svg {
 					display: block;
 					width: 75%;
 					margin-left: auto;
@@ -254,9 +256,36 @@ body {
 			}
 
 			#project5-img {
-				img {
+				svg {
 					display: block;
 					width: 40%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
+			#project8-img {
+				svg {
+					display: block;
+					width: 75%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
+			#project16-img {
+				svg {
+					display: block;
+					width: 75%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+
+			#project18-img {
+				svg {
+					display: block;
+					width: 75%;
 					margin-left: auto;
 					margin-right: auto;
 				}
@@ -268,7 +297,7 @@ body {
 			}
 
 			.project-desc {
-				height: 240px;
+				//height: 240px;
 				margin-bottom: 30px;
 				background-color: transparent;
 				border-color: transparent;
@@ -281,6 +310,13 @@ body {
 					color: black;
 					font-size: 25px;
 					text-align: left;
+				}
+
+				ul {
+					li {
+				  		font-size: 25px;
+						color: #000;
+					}
 				}
 
 				button, iframe {
@@ -297,6 +333,12 @@ body {
 				iframe {
 					padding-top: 6px;
 					margin-left: 10px;
+				}
+			}
+
+			#project16-desc {
+				.row {
+					border-top: 0;
 				}
 			}
 		}
