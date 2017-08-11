@@ -161,7 +161,7 @@ body {
   margin-top: 30px;
   text-align: center;
 }
-.portfolio-content .container .row {
+.portfolio-content .container .row:not(:first-of-type) {
   border-top: 1px solid #ddd;
   padding-top: 2rem;
 }
@@ -180,47 +180,47 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.portfolio-content .container .row #project1-img h2 {
+.portfolio-content .container .row #project3-img h2 {
   font-family: "Focus";
   font-size: 50px;
 }
-.portfolio-content .container .row #project2-img h2 {
+.portfolio-content .container .row #project4-img h2 {
   font-family: "Starjhol";
   font-size: 65px;
   line-height: 30px;
   color: #e5b13a;
 }
-.portfolio-content .container .row #project2-img h3 {
+.portfolio-content .container .row #project4-img h3 {
   font-family: "Starjedi";
   font-size: 20px;
   text-align: center;
   color: black;
 }
-.portfolio-content .container .row #project3-img svg {
-  display: block;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.portfolio-content .container .row #project4-img img {
-  display: block;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .portfolio-content .container .row #project5-img svg {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-content .container .row #project6-img img {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-content .container .row #project7-img svg {
   display: block;
   width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
-.portfolio-content .container .row #project8-img svg {
+.portfolio-content .container .row #project9-img svg {
   display: block;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
-.portfolio-content .container .row #project16-img svg {
+.portfolio-content .container .row #project17-img svg {
   display: block;
   width: 75%;
   margin-left: auto;
@@ -240,6 +240,10 @@ body {
   margin-bottom: 30px;
   background-color: transparent;
   border-color: transparent;
+}
+.portfolio-content .container .row .project-desc .row {
+  border-top: none;
+  padding-top: 0;
 }
 .portfolio-content .container .row .project-desc a:hover {
   text-decoration: none;
@@ -266,8 +270,49 @@ body {
   padding-top: 6px;
   margin-left: 10px;
 }
-.portfolio-content .container .row #project16-desc .row {
-  border-top: 0;
+.portfolio-content .container .row .project-desc .technologies {
+  padding-top: 20px;
+}
+.portfolio-content .container .row .project-desc .technologies .icon {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+}
+.portfolio-content .container .row .project-desc .technologies .bs {
+  position: relative;
+  top: -2px;
+  height: 40px;
+  width: 40px;
+}
+.portfolio-content .container .row .project-desc .technologies .redux-icon {
+  margin-right: 10px;
+}
+.portfolio-content .container .row .project-desc .technologies .aspnet-icon {
+  width: 70px;
+}
+.portfolio-content .container .row .project-desc .technologies .db {
+  margin: 0 10px;
+  width: 80px;
+}
+.portfolio-content .container .row .project-desc .technologies .express-icon {
+  margin: 0 10px;
+  width: 80px;
+}
+.portfolio-content .container .row .project-desc .technologies .mongodb {
+  margin: 0 10px;
+  width: 100px;
+}
+.portfolio-content .container .row .project-desc .technologies .git {
+  position: relative;
+  top: -4px;
+  margin-right: 5px;
+  height: 40px;
+  width: 40px;
+}
+.portfolio-content .container .row .project-desc .technologies svg {
+  height: 100%;
+  width: 100%;
 }
 
 .portfolio-content-full {
