@@ -598,9 +598,30 @@ footer ul {
 }
 
 /*! Footer */
-@media only screen and (max-width: 749px) {
+@media only screen and (max-width: 1440px) {
+  .about-me-content .container {
+    top: 15vh;
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+@media only screen and (max-width: 768px) {
   body {
     margin-bottom: 397px;
+  }
+
+  .about-me-content .container {
+    top: 10vh;
+    width: 100%;
+    margin-left: 0;
+  }
+  .about-me-content .container p {
+    font-size: 35px;
+  }
+
+  .github-content .container #feed {
+    width: 70%;
+    margin-left: 15%;
   }
 
   footer {
@@ -621,7 +642,7 @@ footer ul {
     width: 100%;
   }
 }
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 700px) {
   .welcome .container {
     width: 100%;
     margin-left: 0;
