@@ -1,115 +1,23 @@
 $(document).ready(function() {
-	function window_onload() {
-	  window.addEventListener("scroll",navbar_reset_top,false);
-	}
-	window_onload();
+    $("a.tab").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
 
-	function navbar_reset_top() {
-		var aboutPosition = $("#about_section").position();
-		var portfolioPosition = $("#portfolio_section").position();
-		var scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
-		if (scrollTop >= (portfolioPosition.top - $(".navbar-1").height())) {
-			$(".navbar-1").css({
-				"background-color": "#222",
-				"border-color": "#080808",
-				"background-image": "linear-gradient(to bottom,#3c3c3c 0,#222 100%)",
-			});
-			$(".navbar-1 .container-fluid").attr("class","container");
-		}
-		else if (scrollTop < (portfolioPosition.top - $(".navbar-1 a").height())) {
-			$(".navbar-1").css({
-				"background-color": "rgba(34, 34, 34, 0)",
-				"border-color": "rgba(8, 8, 8, 0)",
-				"background-image": "none",
-			});
-			$(".navbar-1 .container").attr("class","container-fluid");
-		}
+            var hash = this.hash;
+            $("html, body").animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
 
-		if (scrollTop < aboutPosition.top) {
-			$("#about-tab a").css({
-				"color": "white",
-			});
-			$("#portfolio-tab a").css({
-				"color": "white",
-			});
-			$("#about-tab a").hover( function() {
-				$(this).css({
-					"color": "#00cccc",
-				});
-			},
-			function() {
-				$(this).css({
-					"color": "white",
-				});
-			});
-			$("#portfolio-tab a").hover( function() {
-				$(this).css({
-					"color": "#00cccc",
-				});
-			},
-			function() {
-				$(this).css({
-					"color": "white",
-				});
-			});
-		}
-		if (scrollTop >= aboutPosition.top && scrollTop < portfolioPosition.top) {
-			$("#about-tab a").css({
-				"color": "#00cccc",
-			});
-			$("#portfolio-tab a").css({
-				"color": "white",
-			});
-			$("#about-tab a").hover( function() {
-				$(this).css({
-					"color": "#00cccc",
-				});
-			},
-			function() {
-				$(this).css({
-					"color": "#00cccc",
-				});
-			});
-			$("#portfolio-tab a").hover( function() {
-				$(this).css({
-					"color": "#00cccc",
-				});
-			},
-			function() {
-				$(this).css({
-					"color": "white",
-				});
-			});
-		}
-		else if (scrollTop >= portfolioPosition.top) {
-			$("#about-tab a").css({
-				"color": "white",
-			});
-			$("#portfolio-tab a").css({
-				"color": "#00cccc",
-			});
-			$("#about-tab a").hover( function() {
-				$(this).css({
-					"color": "#00cccc",
-				});
-			},
-			function() {
-				$(this).css({
-					"color": "white",
-				});
-			});
-			$("#portfolio-tab a").hover( function() {
-				$(this).css({
-					"color": "#00cccc",
-				});
-			},
-			function() {
-				$(this).css({
-					"color": "#00cccc",
-				});
-			});
-		}
-	}
+    GitHubActivity.feed({
+        username: "lparedesl",
+        // repository: "your-repo",
+        selector: "#feed",
+        limit: 10
+    });
 
 	$("#send-email").click(function(event) {
 		event.preventDefault();

@@ -21,93 +21,101 @@ html {
 
 body {
   font-family: "Simplifica";
-  margin-bottom: 241px;
+  margin: 0 0 241px 0;
 }
 
-.welcome {
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: #848484;
+}
+
+.welcome, .about-me-content {
   position: relative;
   height: 100vh;
   margin-top: 0;
   width: 100%;
-  background: red;
-  /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(#2d2d2d, #1c1c1c, #000000);
-  /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#2d2d2d, #1c1c1c, #000000);
-  /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#2d2d2d, #1c1c1c, #000000);
-  /* For Firefox 3.6 to 15 */
-  background: radial-gradient(#2d2d2d, #1c1c1c, #000000);
-  /* Standard syntax (must be last) */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.welcome {
   color: white;
   text-align: center;
+  background-image: url("../images/code-bg-blurred.png");
 }
-.welcome h1 {
-  position: relative;
-  top: 33vh;
-  font-size: 9vh;
-  line-height: 9vh;
-  padding-bottom: 5vh;
+.welcome .container {
+  position: absolute;
+  top: 40vh;
+  width: 50%;
+  margin-left: 25%;
+}
+.welcome .container h1 {
+  font-size: 12vh;
+  line-height: 12vh;
   margin-top: 0;
   color: #65c2ed;
 }
-.welcome h2 {
-  position: relative;
-  top: 33vh;
+.welcome .container h2 {
   font-size: 5vh;
   line-height: 5vh;
-  margin-bottom: 0;
 }
 
-.navbar-1 {
+.transparent-navbar {
   background-color: rgba(34, 34, 34, 0);
   border-color: rgba(8, 8, 8, 0);
   background-image: none;
 }
 
+.navbar {
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .navbar .brand-name {
   font-size: 35px;
   color: white;
 }
-.navbar .navbar-nav li {
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar .navbar-collapse .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse .navbar-nav li {
   font-size: 35px;
   color: white;
 }
-.navbar .navbar-nav li a {
+.navbar .navbar-collapse .navbar-nav li a {
   color: white;
 }
-.navbar .navbar-nav li a:link {
+.navbar .navbar-collapse .navbar-nav li a:link {
   color: white;
 }
-.navbar .navbar-nav li a:hover {
-  color: #00cccc;
+.navbar .navbar-collapse .navbar-nav li a:hover {
+  color: #4dd0e1;
 }
-.navbar .navbar-nav #portfolio-tab-2, .navbar .navbar-nav #contact-tab-3 {
-  color: #00cccc;
+.navbar .navbar-collapse .navbar-nav #portfolio-tab-2, .navbar .navbar-collapse .navbar-nav #contact-tab-3 {
+  color: #4dd0e1;
 }
 
 .about-me-content {
-  height: 100vh;
-  margin-top: 0;
-  width: 100%;
   color: #0298dd;
   font-weight: 600;
-  background: black;
-}
-.about-me-content #about-me-background {
-  position: relative;
-  height: 100vh;
-  margin-top: 0;
-  width: 100%;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  overflow: auto;
-  opacity: 0.5;
+  background-image: url("../images/about-me-background-dark.png");
 }
 .about-me-content .container {
   position: absolute;
-  top: 120vh;
+  top: 20vh;
   width: 50%;
   margin-left: 25%;
 }
@@ -135,6 +143,126 @@ body {
 .about-me-content .container p {
   font-size: 40px;
   text-align: center;
+}
+
+.skills-content {
+  background-color: #e5e5e5;
+}
+.skills-content .container {
+  padding: 30px;
+  text-align: center;
+}
+.skills-content .container .row h1 {
+  font-size: 50px;
+}
+.skills-content .container .row .col-xs-6 h1 {
+  font-size: 36px;
+  margin: 20px;
+}
+.skills-content .container .row .col-xs-6:first-of-type {
+  padding-right: 0;
+}
+.skills-content .container .row .col-xs-6:first-of-type ul {
+  border-right: 1px solid #727272;
+}
+.skills-content .container .row .col-xs-6:first-of-type ul li {
+  position: relative;
+  left: -20px;
+}
+.skills-content .container li {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.skills-content .container li span {
+  position: relative;
+  top: -10px;
+}
+.skills-content .container li span.react {
+  position: relative;
+  left: -6px;
+}
+.skills-content .container li span.redux {
+  position: relative;
+  left: -2px;
+}
+.skills-content .container li span.mysql {
+  position: relative;
+  left: -10px;
+}
+.skills-content .container li span.csharp {
+  position: relative;
+  left: -12px;
+}
+.skills-content .container li .icon {
+  display: inline-block;
+  height: 40px;
+}
+.skills-content .container li .icon svg {
+  height: 100%;
+}
+.skills-content .container li .icon.css {
+  padding-right: 7px;
+}
+.skills-content .container li .icon.bs {
+  margin-left: 23px;
+  margin-right: 5px;
+  height: 30px;
+  width: 30px;
+}
+.skills-content .container li .icon.js {
+  margin-left: 30px;
+  padding-right: 5px;
+}
+.skills-content .container li .icon.jquery {
+  position: relative;
+  left: -3px;
+  height: 30px;
+}
+.skills-content .container li .icon.hbs {
+  margin-left: 30px;
+  margin-right: 5px;
+}
+.skills-content .container li .icon.hbs svg {
+  width: 30px;
+}
+.skills-content .container li .icon.react {
+  position: relative;
+  left: -10px;
+  height: 35px;
+}
+.skills-content .container li .icon.redux {
+  position: relative;
+  left: -10px;
+  height: 30px;
+}
+.skills-content .container li .icon.node {
+  padding-right: 7px;
+}
+.skills-content .container li .icon.express {
+  height: 30px;
+}
+.skills-content .container li .icon.mysql {
+  position: relative;
+  left: -15px;
+  height: 30px;
+}
+.skills-content .container li .icon.mongodb {
+  margin: 0 10px;
+  height: 50px;
+}
+.skills-content .container li .icon.csharp {
+  position: relative;
+  left: -17px;
+}
+.skills-content .container li .aspnet-icon {
+  width: 70px;
+}
+.skills-content .container li .git {
+  position: relative;
+  top: -4px;
+  margin-right: 5px;
+  height: 40px;
+  width: 40px;
 }
 
 .portfolio-content {
@@ -319,6 +447,22 @@ body {
   margin-top: 35px;
 }
 
+.github-content {
+  background-color: #e5e5e5;
+}
+.github-content .container {
+  padding: 30px;
+}
+.github-content .container h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.github-content .container #feed {
+  width: 50%;
+  margin-left: 25%;
+}
+
 .contact-content {
   margin-top: 70px;
 }
@@ -478,8 +622,21 @@ footer ul {
   }
 }
 @media only screen and (max-width: 699px) {
+  .welcome .container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .welcome .container h1 {
+    font-size: 16vh;
+    line-height: 16vh;
+  }
+  .welcome .container h2 {
+    font-size: 8vh;
+    line-height: 4vh;
+  }
+
   .about-me-content .container {
-    top: 100vh;
+    top: 0;
     width: 100%;
     margin-left: 0;
   }
@@ -488,10 +645,10 @@ footer ul {
     height: 100px;
   }
   .about-me-content .container h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .about-me-content .container p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .portfolio-content .container .row #project2-img img {
@@ -507,14 +664,40 @@ footer ul {
     margin-bottom: 505px !important;
   }
 
-  .navbar-1 {
+  .navbar {
     background-color: #222;
     border-color: #080808;
     background-image: linear-gradient(to bottom, #3c3c3c 0, #222 100%);
   }
 
+  .welcome, .about-me-content {
+    background-position: center center;
+  }
+
+  .welcome .container {
+    top: 40vh;
+  }
+  .welcome .container h1 {
+    font-size: 9vh;
+    line-height: 9vh;
+  }
+  .welcome .container h2 {
+    font-size: 5vh;
+    line-height: 5vh;
+  }
+
+  .skills-content .container {
+    padding: 30px 0 30px 0;
+  }
+
   .about-me-content .container {
-    top: 115vh;
+    top: 10vh;
+  }
+  .about-me-content .container h1 {
+    font-size: 30px;
+  }
+  .about-me-content .container p {
+    font-size: 25px;
   }
 
   .portfolio-content .container .row #project2-img img {
