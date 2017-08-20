@@ -605,15 +605,21 @@ footer ul {
     margin-left: 15%;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .welcome .container h1 {
+    font-size: 12vh;
+    line-height: 12vh;
+  }
+}
 @media only screen and (max-width: 768px) {
   body {
-    margin-bottom: 397px;
+    margin-bottom: 377px;
   }
 
   .about-me-content .container {
     top: 10vh;
-    width: 100%;
-    margin-left: 0;
+    width: 90%;
+    margin-left: 5%;
   }
   .about-me-content .container p {
     font-size: 35px;
@@ -625,7 +631,7 @@ footer ul {
   }
 
   footer {
-    height: 397px;
+    height: 377px;
   }
   footer .centered {
     flex-wrap: wrap;
@@ -642,8 +648,9 @@ footer ul {
     width: 100%;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .welcome .container {
+    top: 35vh;
     width: 100%;
     margin-left: 0;
   }
@@ -666,12 +673,13 @@ footer ul {
     height: 100px;
   }
   .about-me-content .container h1 {
-    font-size: 25px;
+    font-size: 28px;
   }
   .about-me-content .container p {
-    font-size: 18px;
+    font-size: 21px;
   }
-
+}
+@media only screen and (max-width: 700px) {
   .portfolio-content .container .row #project2-img img {
     width: 50%;
   }
@@ -680,15 +688,26 @@ footer ul {
     width: 100%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .about-me-content .container {
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+  .about-me-content .container .my-picture {
+    width: 80px;
+    height: 80px;
+  }
+  .about-me-content .container h1 {
+    font-size: 25px;
+  }
+  .about-me-content .container p {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 500px) {
   body {
     margin-bottom: 505px !important;
-  }
-
-  .navbar {
-    background-color: #222;
-    border-color: #080808;
-    background-image: linear-gradient(to bottom, #3c3c3c 0, #222 100%);
   }
 
   .welcome, .about-me-content {
@@ -714,15 +733,24 @@ footer ul {
   .about-me-content .container {
     top: 10vh;
   }
+  .about-me-content .container .my-picture {
+    width: 100px;
+    height: 100px;
+  }
   .about-me-content .container h1 {
     font-size: 30px;
   }
   .about-me-content .container p {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .portfolio-content .container .row #project2-img img {
     width: 65%;
+  }
+
+  .github-content .container #feed {
+    width: 100%;
+    margin-left: 0;
   }
 
   footer {
@@ -739,5 +767,10 @@ footer ul {
   footer .centered .footer-connect {
     width: 100%;
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .about-me-content .container p {
+    font-size: 20px;
   }
 }
