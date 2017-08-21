@@ -610,6 +610,15 @@ footer ul {
     font-size: 12vh;
     line-height: 12vh;
   }
+
+  .about-me-content .container {
+    top: 10vh;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .about-me-content .container p {
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width: 768px) {
   body {
